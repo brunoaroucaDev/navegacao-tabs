@@ -54,7 +54,7 @@ function newsRender(navTabIndex){
                 <span class="notice-date">${news.date} ${news.hour}</span>
                 <div class="btn">
                     <a href="">Leia mais</a>
-                    <span class="arrow"></span>
+                    <span></span>
                 </div>
             </div>
           `  

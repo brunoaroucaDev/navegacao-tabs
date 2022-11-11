@@ -103,7 +103,7 @@ main{
 .tab-content .tab-pane a:hover{
     color: #F2D23C;
 }
-.tab-content .tab-pane .btn .arrow{
+.tab-content .tab-pane .btn span{
     width: 4px;
     height: 8px;
     background: url('../img/arrow.svg');
@@ -113,17 +113,6 @@ main{
     margin-left: 2rem;
     transition: all .5s;
 }
-.hoverSeta{
-    width: 4px;
-    height: 8px;
-    background: url('../img/arrow-hover.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-    margin-left: 2rem;
-    transition: all .5s;
-}
-
 
 footer{
     margin-top: 12rem;
