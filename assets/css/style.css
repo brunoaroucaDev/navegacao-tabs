@@ -32,13 +32,15 @@ main{
     border-bottom: 3px solid #475569;
     padding: 24px 0;
     margin-bottom: 3.2rem;
+    
 }
+
 .nav-tab li a{
     color: #F7FAFC;
     font-size: 1.6rem;
     border-bottom: 3px;
     padding-bottom: 25px;
-    transition: color .3, border-bottom .3s;
+    transition: color .5s, border-bottom .5s;
     font-family: 'Poppins', sans-serif;
 }
 .nav-tab li a.active, .nav-tab li a:hover{
@@ -56,6 +58,9 @@ main{
 .tab-content .tab-pane{
     width: 100%;
     max-width: 18rem;
+}
+.tab-content .tab-pane.active{
+    animation: fadeIn .3s forwards;
 }
 .tab-content .tab-pane img{
     width: 100%;
@@ -98,7 +103,7 @@ main{
 .tab-content .tab-pane a:hover{
     color: #F2D23C;
 }
-.tab-content .tab-pane .btn span{
+.tab-content .tab-pane .btn .arrow{
     width: 4px;
     height: 8px;
     background: url('../img/arrow.svg');
@@ -108,10 +113,20 @@ main{
     margin-left: 2rem;
     transition: all .5s;
 }
+.hoverSeta{
+    width: 4px;
+    height: 8px;
+    background: url('../img/arrow-hover.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-left: 2rem;
+    transition: all .5s;
+}
 
 
 footer{
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 footer p, footer p strong{
     font-size: 1.2rem;
@@ -163,5 +178,16 @@ footer p strong{
     footer p, footer p strong {
         font-size: 1.4rem;
         
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
